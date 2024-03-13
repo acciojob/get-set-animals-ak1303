@@ -7,18 +7,20 @@ class Animal {
 		return this.species;
 	}
 	makeSound(){
-		console.log(`${this.species} makes the sound` )
+		console.log(`The ${this.species} makes the sound` )
 	}
 }
 
 class Dog extends Animal {
-	bark(){
+	bark(species){
+		super(species);
 		console.log('bark');
 	}
 }
 
 class Cat extends Animal {
 	purr(){
+		super(species);
 		console.log('purr');
 	}
 }
